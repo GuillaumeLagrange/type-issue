@@ -52,6 +52,7 @@ importers:
 
   packages/lib-a:
     specifiers:
+      '@my-app/lib-b': workspace:^
       '@types/node': ^18.13.0
       '@vitest/coverage-c8': ^0.28.4
       concurrently: ^7.6.0
@@ -67,6 +68,8 @@ importers:
       vite: ^4.1.1
       vite-tsconfig-paths: ^4.0.5
       vitest: ^0.28.4
+    dependencies:
+      '@my-app/lib-b': link:../lib-b
     devDependencies:
       '@types/node': 18.13.0
       '@vitest/coverage-c8': 0.28.4
@@ -93,6 +96,7 @@ importers:
       eslint: ^8.33.0
       json-schema-to-ts: ^2.6.2
       prettier: ^2.8.4
+      random: ^4.1.0
       rimraf: ^4.1.2
       ts-node: ^10.9.1
       tsc-alias: ^1.8.2
@@ -101,6 +105,8 @@ importers:
       vite: ^4.1.1
       vite-tsconfig-paths: ^4.0.5
       vitest: ^0.28.4
+    dependencies:
+      random: 4.1.0
     devDependencies:
       '@types/node': 18.13.0
       '@vitest/coverage-c8': 0.28.4
@@ -4331,6 +4337,13 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /random/4.1.0:
+    resolution: {integrity: sha512-6Ajb7XmMSE9EFAMGC3kg9mvE7fGlBip25mYYuSMzw/uUSrmGilvZo2qwX3RnTRjwXkwkS+4swse9otZ92VjAtQ==}
+    engines: {node: '>=14'}
+    dependencies:
+      seedrandom: 3.0.5
+    dev: false
+
   /react-is/17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: true
@@ -4537,6 +4550,10 @@ packages:
   /sax/1.2.1:
     resolution: {integrity: sha512-8I2a3LovHTOpm7NV5yOyO8IHqgVsfK4+UuySrXU8YXkSRX7k6hCV9b3HrkKCr3nMpgj+0bmocaJJWpvp1oc7ZA==}
     dev: true
+
+  /seedrandom/3.0.5:
+    resolution: {integrity: sha512-8OwmbklUNzwezjGInmZ+2clQmExQPvomqjL7LFqOYqtmuxRgQYqOD3mHaU+MvZn5FLUeVxVfQjwLZW/n/JFuqg==}
+    dev: false
 
   /semver-try-require/6.0.0:
     resolution: {integrity: sha512-C3RwXtL5VHhGcUeH+t/Gybit9XGHutb1fX8mp2L2v6rrD1GPC9FLQuYN/RoZAedmoWKmuWWDGbfej1LpJOcJxA==}

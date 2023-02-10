@@ -76,6 +76,10 @@
     {
       "path": "packages/lib-b",
       "name": "lib b [library]"
+    },
+    {
+      "path": "services/users",
+      "name": "users [service]"
     }
   ]
 }

@@ -27,6 +27,9 @@
     "test-unit": "vitest run --coverage --passWithNoTests",
     "watch": "pnpm clean dist && concurrently 'pnpm:package-* --watch'"
   },
+  "dependencies": {
+    "@my-app/lib-b": "workspace:^"
+  },
   "devDependencies": {
     "@types/node": "^18.13.0",
     "@vitest/coverage-c8": "^0.28.4",

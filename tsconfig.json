@@ -7,6 +7,9 @@
     },
     {
       "path": "./packages/lib-b/tsconfig.build.json"
+    },
+    {
+      "path": "./services/users/tsconfig.json"
     }
   ]
 }
