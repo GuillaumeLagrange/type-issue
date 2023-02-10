@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "serverless-configuration": "packages/serverless-configuration"
+    "lib-a": "packages/lib-a",
+    "lib-b": "packages/lib-b"
   }
 }
